@@ -12,9 +12,6 @@
       "dest": "src/server.ts"
     }
   ],
-  "env": {
-    "YOUR_ENV_VARIABLE": "value"
-  },
   "functions": {
     "api/*": {
       "includeFiles": "prisma/schema.prisma"
