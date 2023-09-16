@@ -1,13 +1,14 @@
 {
   "name": "video-converter-ai-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Converter video to audio with ai",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch src/server.ts"
+    "dev": "tsx watch src/server.ts",
+    "vercel-build": "npx prisma migrate deploy"
   },
   "keywords": [],
-  "author": "",
+  "author": "Allan Gomes",
   "license": "ISC",
   "prisma": {
     "seed": "tsx prisma/seed.ts"
