@@ -2,11 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "vercel-build.js",
+      "src": "src/server.ts",
       "use": "@vercel/node"
     }
   ],
   "routes": [
-    { "handle": "vercel-build.js", "src": "/vercel-build", "methods": ["POST"] }
+    {
+      "src": "(.*)",
+      "dest": "src/server.ts"
+    }
   ]
 }
