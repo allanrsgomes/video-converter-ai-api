@@ -1,10 +1,11 @@
 generator client {
   provider = "prisma-client-js"
+  output   = "./generated/client"
 }
 
 datasource db {
   provider = "sqlite"
-  url      = env("postgres://allanrsgomes:FBn4oUrfK0iW@ep-late-queen-22964600.us-east-2.aws.neon.tech/neondb")
+  url      = env("DATABASE_URL")
 }
 
 model Video {
