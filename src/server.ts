@@ -9,6 +9,11 @@ const app = fastify()
 app.register(fastifyCors, {
   origin: '*'
 })
+
+app.get('/', async (request, reply) => {
+  reply.send({ message: 'Bem-vindo à API!' })
+})
+
 app.register(getAllPromptsRoute)
 app.register(uploadVideoRoute)
 app.register(createTranscriptionRoute)
