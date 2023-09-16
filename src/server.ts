@@ -4,9 +4,6 @@ import { getAllPromptsRoute } from './routes/get-all-prompts'
 import { uploadVideoRoute } from './routes/upload-video'
 import { createTranscriptionRoute } from './routes/create-transcription'
 import { generateAiCompletionRoute } from './routes/generate-ai-completion'
-import { PrismaClient } from '@prisma/client'
-
-export const prisma = new PrismaClient()
 
 const app = fastify()
 app.register(fastifyCors, {
