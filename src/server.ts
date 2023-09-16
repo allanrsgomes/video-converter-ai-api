@@ -8,6 +8,7 @@ import { generateAiCompletionRoute } from './routes/generate-ai-completion'
 const app = fastify()
 app.register(fastifyCors, {
   origin: '*'
+  
 })
 
 app.get('/', async (request, reply) => {
